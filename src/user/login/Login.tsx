@@ -1,9 +1,10 @@
+import './Login.css';
 import React, { Component } from 'react';
 import { FACEBOOK_AUTH_URL, GITHUB_AUTH_URL, GOOGLE_AUTH_URL } from '../../constants';
-import './Login.css';
 import fbLogo from '../../image/fb-logo.png';
 import googleLogo from '../../image/google-logo.png';
 import githubLogo from '../../image/github-logo.png';
+import { Link } from 'react-router-dom';
 
 export default class Login extends Component {
   componentDidMount() {
@@ -93,7 +94,11 @@ class LoginForm extends Component {
                       value={''} onChange={this.handleInputChange} required/>
               </div>
               <div className="form-item">
-                  <button type="submit" className="btn btn-block btn-primary">登陆</button>
+                  <Link to='/library'>
+                    <button type="submit" className="btn btn-block btn-primary">
+                      登陆
+                    </button>
+                  </Link>
               </div>
           </form>                    
       );
