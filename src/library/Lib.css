@@ -1,0 +1,30 @@
+
+.library-header-container {
+  padding: 10px 10px;
+  outline: 1px solid #C0C0C0;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.library-header-container>div {
+  display: flex;
+}
+
+.library-header-search {
+  justify-content: flex-start;
+}
+
+.library-header-buttons {
+  justify-content: flex-end;
+}
+
+.library-header-buttons>button {
+  margin: 0 0 0 16px;
+  width: 130px;
+}
+
+.library-header-user {
+
+}

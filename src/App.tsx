@@ -1,11 +1,17 @@
-import React from 'react';
 import './App.css';
 import Login from './user/login/Login';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Library from './library/Main';
 
 function App() {
   return (
     <div className="App">
-      <Login/>
+      <Router>
+        <Switch>
+          <Route path="/library" component={Library}></Route>
+          <Route path="/" component={Login}></Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
